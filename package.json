@@ -1,0 +1,22 @@
+{
+  "bugs": {
+    "url": "https://github.com/isdampe/language-pseu/issues"
+  },
+  "dependencies": {},
+  "description": "A very simple syntax highlighter for pseudocode.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/isdampe/language-pseu",
+  "license": "MIT",
+  "name": "language-pseu",
+  "optionalDependencies": {},
+  "readme": "# Pseudocode syntax highlighting for Atom \nA very simply language package for pseudocode in atom.",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isdampe/language-pseu.git"
+  },
+  "version": "0.1.0"
+}

@@ -1,0 +1,77 @@
+'fileTypes': [
+  'pseudo',
+  'pseudocode'
+]
+'name': 'Pseudocode'
+'patterns': [
+  {
+    'match': '(?i:\\b(IF|ENDIF|THEN|ELSE|ELSEIF|SELECT|CASE|ENDCASE|BREAK|RETURN|WHILE|ENDWHILE|DOWHILE|ENDDO|REPEAT|UNTIL|TO|END)\\b)'
+    'name': 'keyword.control.pseudo'
+  }
+  {
+    'match': '(?:\\b(FUNCTION|ENDFUNCTION|SUB|ENDSUB|ROUTINE|ENDROUTINE|PROGRAM|ENDPROGRAM)\\b)'
+    'name': 'support.type.pseudo'
+  }
+  {
+    'match': '\\s(=|\\+=|-=|\\*=|/=|&=)\\s'
+    'name': 'keyword.operator.assignment.pseudo'
+  }
+  {
+    'match': '(\\+|-|\\*|/|&|\\^)'
+    'name': 'keyword.operator.arithmetic.pseudo'
+  }
+  {
+    'match': '(=|==|<>|>|>=|<|<=)'
+    'name': 'keyword.operator.comparison.pseudo'
+  }
+  {
+    'match': '(?i:\\b(AND|OR|NOT))'
+    'name': 'keyword.operator.logical.pseudo'
+  }
+  {
+    'match': '(?i:\\b(TRUE|FALSE)\\b)'
+    'name': 'constant.boolean.pseudo'
+  }
+  {
+    'match': '(?i:(\\b(PRINT|READ|GET|FROM|WRITE|PUT))|Exit)\\b'
+    'name': 'support.function.pseudo'
+  }
+  {
+    'match': '[a-zA-Z_]+[\\w_]*(?=\\()'
+    'name': 'entity.name.function.pseudo'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.double.pseudo'
+    'patterns': [
+      {
+        'match': '`'
+        'name': 'constant.character.escape.pseudo'
+      }
+    ]
+  }
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'string.quoted.single.pseudo'
+    'patterns': [
+      {
+        'match': '`'
+        'name': 'constant.character.escape.pseudo'
+      }
+    ]
+  }
+  {
+    'captures':
+      '1':
+        'name': 'punctuation.definition.comment.pseudo'
+    'match': '(?:^[ \\t]+)?(\/\/).*$\\n?'
+    'name': 'comment.line.single.pseudo'
+  }
+  {
+    'match': ','
+    'name': 'punctuation.separator.function.pseudo'
+  }
+]
+'scopeName': 'source.pseudo'
