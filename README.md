@@ -2,6 +2,8 @@
 
 A very simple pseudocode language definition and syntax highlighter.
 
+By default, reads ```*.pseudo``` and ```*.pseudocode``` files.
+
 ![language-pseu-screenshot](screenshot.png)
 
 ## Syntax
